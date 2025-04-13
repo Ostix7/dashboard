@@ -14,5 +14,4 @@ scrape_configs:
       - targets: [ "localhost" ]
         labels:
           job: "docker-logs"
-          # Читаем json-файлы контейнерных логов
           __path__: /var/lib/docker/containers/*/*.log
